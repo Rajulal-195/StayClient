@@ -5,9 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Headers() {
     const [logData, setlogData] = useState("")
-
     const userdata = () => {
-
         const user = JSON.parse(localStorage.getItem("user"));
         setlogData(user);
     }
@@ -20,10 +18,7 @@ function Headers() {
         userdata()
     }, [])
 
-
     const { user } = useContext(AuthContext);
-
-console.log("user data is ",user)
 
     return (
         <>
@@ -32,7 +27,7 @@ console.log("user data is ",user)
                 <div className="row gx-0">
                     <div className="col-lg-2 bg-white d-none d-lg-block">
                         <Link to="/" className="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
-                            <img src='/images/logo.PNG' width={150} height={98} alt='Company Logo' />
+                            <img src='https://res.cloudinary.com/dwp3vqqoj/image/upload/v1729051767/dg9ejty46h1hglsnsccf.png' width={150} height={98} alt='Company Logo' />
                         </Link>
                     </div>
                     <div className="col-lg-10">
@@ -55,8 +50,8 @@ console.log("user data is ",user)
                                 <div className="d-inline-flex align-items-center py-2 media-icons">
                                     <Link className="me-4 text-primary" to="https://www.facebook.com/share/awQaug6PfNs1drif/?mibextid=qi2Omg" target="_blank"><i className="fab fa-facebook-f"></i></Link>
                                     <Link className=" text-primary" to="https://x.com/stay_menu" target='_blank'>
-                                  
-                                    <img src='/images/xx.jpg' width={18} alt=''/>
+
+                                        <img src='/images/xx.jpg' width={18} alt='' />
                                     </Link>
                                     <Link className="me-4 text-primary" to="" target="_blank"></Link>
                                     <Link className="me-4 text-primary" to="https://www.instagram.com/staymenu_?igsh=MW1lc3dpZnJnYTI0dg==" target="_blank"><i className="fab fa-instagram"></i></Link>
