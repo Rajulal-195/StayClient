@@ -1,0 +1,25 @@
+.userbackground {
+    background-color: whitesmoke;
+    padding: 0px, 10%;
+    height: 100%;
+}
+
+.signmain {
+    padding: 10%;
+    padding-top: 2%;
+    margin: 0 auto;
+    border: 1px solid lightgray;
+    box-shadow: 2px 2px 20px 2px gray;
+}
+
+.setsign{
+    text-decoration: underline;
+    color: #0071c2;
+}
+.sethr{
+    width: 300px;
+    margin: 0px auto;
+}
+.ses{
+    padding-left: 48.8%;
+}
