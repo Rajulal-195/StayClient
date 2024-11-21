@@ -22,7 +22,8 @@ import Booking from "./components/reserve/Booking";
 import Userupdate from "./pages/login/Userupdate";
 import AllBooking from "./components/reserve/AllBooking";
 import PaymentGate from "./components/reserve/PaymentGate";
-import Admin from "./Admin/Admin"
+import Admins from "./HotelsAdmin/home/Admins"
+import ForgetPass from "./pages/signup/ForgetPass";
 
 function App() {
   const [loading, setloading] = useState(true);
@@ -56,7 +57,8 @@ function App() {
         <Route path="/myAllbooking" element={<AllBooking />} />
         <Route path="/editprofile" element={<Userupdate />} />
         <Route path="/payment" element={<PaymentGate />} />
-        <Route path="/admin" element={<Admin />} />
+        <Route path="/admin" element={<Admins />} />
+        <Route path="/forgetpass" element={<ForgetPass />} />
       </Routes>
     </BrowserRouter>
   );
