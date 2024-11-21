@@ -113,7 +113,7 @@ const ForgetPass = () => {
             if (isVerified === true) {
                 if (user.password === user.confirmpass) {
 
-                    await axios.put(`http://localhost:5000/api/users/update-by-phone/${phone}`, user);
+                    await axios.put(`https://stayback1.onrender.com/api/users/update-by-phone/${phone}`, user);
                     toast.success("Password Updated ");
                     navigate('/login');
                 }
