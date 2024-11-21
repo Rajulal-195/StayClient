@@ -4,19 +4,20 @@
   align-items: center;
   justify-content: center;
 }
- 
-.signinbtn{
+
+.signinbtn {
 
   margin: 0px auto;
 }
+
 .lContainer {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.log{
-  padding-left: 25%  !important;
+.log {
+  padding-left: 25% !important;
 }
 
 .lButton {
@@ -29,37 +30,39 @@
   border-radius: 5px;
 }
 
-.lButton:disabled{
+.lButton:disabled {
   background-color: #0071c28c;
   cursor: not-allowed;
 }
-.username{
+
+.username {
   text-transform: uppercase;
 }
 
-.profil{
+.profil {
   font-family: Georgia, 'Times New Roman', Times, serif;
   margin: 70px auto !important;
-  
-  
-  
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.ingset{
+.ingset {
   border-radius: 2%;
-  
+
 }
 
-.setedit{
+.setedit {
   margin-top: 10px;
   margin-left: 82%;
-  
   background-color: #0071c2;
   color: white;
 }
 
-.swal2-timerProgressBar{
+.swal2-timerProgressBar {
   color: orange;
   height: 5px;
 }
+
+.form-control {
+  background-color: rgb(251, 251, 251);
+}
+

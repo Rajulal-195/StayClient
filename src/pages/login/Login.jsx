@@ -50,9 +50,14 @@ const Login = () => {
 
   return (
     <>
-      <Headers />
+      
       <div className="userbackground ">
         <div className=" signmain">
+        <div className='text-center'>
+            <Link to="/">
+              <img className='m-5' src='https://res.cloudinary.com/dwp3vqqoj/image/upload/v1729051767/dg9ejty46h1hglsnsccf.png' width={150} height={98} alt='Company Logo' />
+            </Link>
+          </div>
           <div className="lContainer    ">
             <h1 className='setsign'> Sign in </h1>
             <label htmlFor='email'>User Name</label>
@@ -76,11 +81,15 @@ const Login = () => {
                 {showPassword ? <img src='images/eye-slash.svg' /> : <img src='images/eye.svg' />}
               </button>
             </div>
-            <button disabled={loading} onClick={handleClick} className=" btn btn-primary signinbtn">
+            <div className="text-end ">
+              <Link className="forget" to='/forgetpass'>Forget Password<img src="./images/forgetpass.jpg" width={40} height={40} /></Link>
+            </div>
+
+            <button disabled={loading} onClick={handleClick} className=" btn btn-primary signinbtn my-4">
               Login
             </button>
             {error && <span className="text-danger">{error.message}</span>}
-            <span className='text-secondary'> You Don't have a Account ?
+            <span className='text-secondary'> You Don't have a Account ?&emsp;
               <Link className="text-primary" to='/signup'>Sign up here...</Link>
             </span>
             <hr className="sethr" />
@@ -95,5 +104,4 @@ const Login = () => {
     </>
   );
 };
-
 export default Login;

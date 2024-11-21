@@ -114,15 +114,6 @@ function Signup() {
     return isValid;
   };
 
-  // const checkPhoneNumber = async () => {
-  //   try {
-  //     const response = await axios.get(`http://localhost:5000/check-phone/${phone}`);
-  //     setExists(response.data.exists);
-  //   } catch (error) {
-  //     console.error('Error checking phone number:', error);
-  //   }
-  // };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitted(true);
@@ -147,9 +138,15 @@ function Signup() {
 
   return (
     <>
-      <Headers />
+
       <div className='userbackground'>
         <div className=' signmain'>
+          <div className='text-center'>
+            <Link to="/">
+              <img className='m-4' src='https://res.cloudinary.com/dwp3vqqoj/image/upload/v1729051767/dg9ejty46h1hglsnsccf.png' width={150} height={98} alt='Company Logo' />
+            </Link>
+          </div>
+
           <h1 className='setsign'>Sign up</h1>
           <form onSubmit={handleSubmit}>
             <div className="mb-1 rounded">
@@ -200,9 +197,10 @@ function Signup() {
                       fontSize: "20px",
                       background: 'info transparent',
                       cursor: 'pointer',
-                      width: "100px",
-                      color: 'green'
-                    }}> Verified</span>
+                      width: "130px",
+                      color: '#3ba55d'
+
+                    }}>Verified&ensp;<img src='./images/verify.gif' width={30} height={30} /></span>
                   </div>
                 ) : (
                   <button className='btn-sm btn-info my-2 text-primary ' onClick={handleSendOtp}
