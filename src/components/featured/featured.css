@@ -17,7 +17,7 @@
   margin: 5px;
   padding: 10px;
   display: inline-flex;
-  /* overflow: hidden ; */
+  
 }
 
 .featuredImg {
@@ -36,7 +36,31 @@
 
 .settlement {
   display: inline-flex;
-  overflow-x:auto;
+  
 }
 
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee-content {
+  display: flex;
+  animation: marquee 50s linear infinite;
+}
+
+.marquee-content img {
+  margin-right: 20px;
+  /* You can adjust the size of images as needed */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 
