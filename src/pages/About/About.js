@@ -14,7 +14,7 @@ function About() {
         <div className='row '>
           <p className='headshort'>- Our Mission - </p>
           <div className='col '>
-            <p className='p-5  member'>
+            <p className='p-2  member'>
               &emsp;&emsp;StayMenu is a global platform that empowers entrepreneurs and Big businesses with hotels and homes by providing full stack technology that increases earnings and eases operations. Bringing affordable and trusted accommodation that guests can book instantly.
             </p>
           </div>
@@ -23,7 +23,7 @@ function About() {
           <p className='headshort '>- Meet Our Team -  </p>
           <div className='col-md setimg'>
             <div className='myDIV'>
-              <img className=" imgsetss  " src='./images/narrotam.JPEG' alt='' />
+              <img className=" imgsetss  " src='./images/narrotam.jpeg' alt='' />
               <p className='member'>Mr. Narottam Sharma</p>
             </div>
             <div className='hide'>&emsp;&emsp;Narottam Sharma is Founder & CEO of STAY MENU Organisation. StayMenu is a global platform that empowers entrepreneurs and small businesses with hotels and homes </div>
