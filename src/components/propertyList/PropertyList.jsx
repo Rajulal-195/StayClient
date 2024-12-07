@@ -14,14 +14,8 @@ const PropertyList = () => {
 
   console.log("count by type ",data)
   return (
-    <div className="pList m-5">
+    <div className="pList ">
       <div className="row">
-
-      {loading ? (
-        "loading"
-      ) : (
-        <>
-
 
           {data &&
             images.map((img,i) => (
@@ -37,8 +31,7 @@ const PropertyList = () => {
                 </div>
               </div>
             ))}
-        </>
-      )}
+     
       </div>
     </div>
   );

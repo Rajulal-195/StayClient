@@ -1,15 +1,27 @@
-import React from 'react'
+import React from 'react';
 
-function PaymentGate({ booking }) {
-  console.log("booking id ", booking)
-  return (
-    <div>
-      <h1 className='mt-5 py-5 alert alert-success'>
-        Congratulation your<br/> 
-        Booking hase been Confirmed
-      </h1>
-    </div>
-  )
-}
+const PaymentGate = ({ paymentId }) => {
+    // Now you can access all the properties of the booking like paymentId.dates, paymentId.user, etc.
+    if (!paymentId) {
+        return <div>Loading...</div>;
+    }
+    console.log("booking id for paymrent is", paymentId)
+    return (
+        <div>
+            <h2>Payment Details</h2>
+            <div>
+                <strong>Booking ID: </strong>{paymentId._id}<br />
+                <strong>Hotel: </strong>{paymentId.hotels[0].name}<br />
+                <strong>Total Rent: </strong>{paymentId.hotels[0].cheapestPrice * paymentId.days}<br />
 
-export default PaymentGate
+                {/* Add more details as needed */}
+            </div>
+
+            <button onClick={() => { /* Handle payment logic */ }}>
+                Proceed with Payment
+            </button>
+        </div>
+    );
+};
+
+export default PaymentGate;

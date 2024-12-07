@@ -9,10 +9,7 @@ import PaymentGate from './PaymentGate';
 
 const Booking = () => {
     const { user } = useContext(AuthContext);
-    const [newBooking, setNewBooking] = useState([]);
     const [booking, setBooking] = useState([]);
-    const [loading, setLoading] = useState(true);
-
     const userId = user._id;
     const lastElement = booking[booking.length - 1];
     const Navigate = useNavigate();
@@ -20,20 +17,19 @@ const Booking = () => {
         Navigate("/payment")
     };
 
+    console.log("payment id is ", lastElement)
+    const handleBook = async () => {
+        const response = await axios.get(`https://stayback1.onrender.com/api/booking/user/${userId}`);
+        setBooking(response.data);
+        toast.info("Your Booking is Featched...");
+        try {
+        } catch (error) {
+            console.error("Something went wrong!", error);
+            toast.error("Something went wrong!");
+        }
+    };
     useEffect(() => {
-        const handleBook = async () => {
-            const response = await axios.get(`https://stayback1.onrender.com/api/booking/user/${userId}`);
-            setBooking(response.data);
-            toast.info("Your Booking is Featched...");
-            try {
-            } catch (error) {
-                console.error("Something went wrong!", error);
-                toast.error("Something went wrong!");
-            }
-        };
-
         handleBook()
-
     }, [userId]);
 
 
@@ -50,9 +46,6 @@ const Booking = () => {
         );
     }
 
-    const bookingID = lastElement._id
-
-    console.log("Booking ID is ", bookingID)
 
     return (
         <>
@@ -60,7 +53,7 @@ const Booking = () => {
             <div className='container bord '>
                 <div className='row '>
                     <div className='col-md-3 text-center  '>
-                        <img src="https://res.cloudinary.com/dwp3vqqoj/image/upload/v1729051767/dg9ejty46h1hglsnsccf.png"className='booking' alt='Company Logo' />
+                        <img src="https://res.cloudinary.com/dwp3vqqoj/image/upload/v1729051767/dg9ejty46h1hglsnsccf.png" className='booking' alt='Company Logo' />
                     </div>
 
 
@@ -163,7 +156,7 @@ const Booking = () => {
                     </div>
                 </p>
                 <button className='btn handlebutton my-5' onClick={handlepayment}>Pay Now</button>
-                {<PaymentGate booking={bookingID} />}
+            <PaymentGate paymentId={lastElement} /> 
             </div>
         </>
     );

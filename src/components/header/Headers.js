@@ -85,7 +85,7 @@ function Headers() {
                                         <button className="btn text-white dropdown-toggle " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                             {user.username}
                                         </button>
-                                        <ul className="dropdown-menu bg-primary text-white " aria-labelledby="dropdownMenuButton1">
+                                        <ul className="dropdown-menu bg-primary text-white p-3" aria-labelledby="dropdownMenuButton1">
                                             <Link className="dropdown-item text-white profile" to="/profile">Profile</Link>
                                             <Link className="dropdown-item text-white  profile" to='/myAllbooking'>My Booking</Link>
                                             <li><a className="dropdown-item text-white profile" href="#" onClick={logOut}>Logout</a></li>

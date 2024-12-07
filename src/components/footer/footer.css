@@ -31,7 +31,8 @@
 }
 
 .hrlines {
-  color: gray;
+  color: red !important;
+  
 }
 
 .footeritem li {
