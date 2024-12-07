@@ -112,7 +112,7 @@ const Hotel = () => {
               </div>
             ))}
           </div>
-          <div className="hotelWrapper container p-4">
+          <div className="hotelWrapper container">
             <h1 className="hotelTitl ">{data.name}</h1>
             <div className="hotelDetails row ">
               <div className="hotelDetailsTexts col-md-7">

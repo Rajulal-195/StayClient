@@ -31,7 +31,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setloading(false);
-    }, 100);
+    }, 50);
   }, []);
 
   if (loading) {
@@ -40,7 +40,6 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-
         <Route path="*" element={<Errorpage />} />
         <Route path="/" element={<Home />} />
         <Route path="/hotels" element={<List />} />

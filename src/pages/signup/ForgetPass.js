@@ -121,10 +121,9 @@ const ForgetPass = () => {
 
         } catch (error) {
             console.error('Error during signup', error);
-            toast.error('SomeThing Went wrong Please try again.', error);
+            toast.error('SomeThing Went wrong Please try again.', error.message);
         }
     };
-    console.log("Rest password", user)
 
     return (
         <>
