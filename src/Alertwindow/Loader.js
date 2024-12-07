@@ -16,6 +16,10 @@ function Loader() {
     return (
         <>
             <div className="sweet-loading " >
+
+
+
+                
                 <CircleLoader
                     color={color}
                     loading={loading}

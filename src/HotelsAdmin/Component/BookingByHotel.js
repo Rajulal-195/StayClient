@@ -27,9 +27,9 @@ const BookingByHotel = () => {
 
     return (
         <div>
-            <h1>Booking data by hotls</h1>
-            {/* {booking.map(newBooking => (
-                <div className='container bord border border-secondary ' >
+            <h1>Booking data by hotels</h1>
+            {booking.map(newBooking => (
+                <div className='container bord border border-secondary'>
                     <div className='row mx-md-3'>
                         <div className='col-md-3 text-center  '>
                             <img src="https://res.cloudinary.com/dwp3vqqoj/image/upload/v1729051767/dg9ejty46h1hglsnsccf.png" className='booking' alt='Company Logo' />
@@ -170,7 +170,7 @@ const BookingByHotel = () => {
                         </div>
                     </div>
                 </div >
-            ))} */}
+            ))}
 
         </div>
     )
