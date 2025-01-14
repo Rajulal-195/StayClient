@@ -1,0 +1,67 @@
+.featured {
+  margin: 10px !important;
+  width: 100%;
+  justify-content: space-between;
+  gap: 20px;
+  z-index: 1;
+}
+
+.featuredItem {
+  position: relative;
+  color: white;
+  border-radius: 10px;
+  height: 160px;
+  flex: 1;
+  min-width: 180px;
+  border: 1px solid lightgray;
+  margin: 5px;
+  padding: 4px;
+  display: inline-flex;
+  
+}
+
+.featuredImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5%;
+}
+
+.featuredTitles {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: smaller;
+
+}
+
+.settlement {
+  display: inline-flex;
+  
+}
+
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee-content {
+  display: flex;
+  animation: marquee 50s linear infinite;
+}
+
+.marquee-content img {
+  margin-right: 20px;
+  /* You can adjust the size of images as needed */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+

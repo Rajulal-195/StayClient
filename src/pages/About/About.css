@@ -1,0 +1,61 @@
+h1 {
+  text-align: center !important;
+}
+
+.setimg {
+  border: 1px solid #0f172b;
+  margin: 5px !important;
+  border-radius: 3%;
+  padding: 5px;
+
+
+
+
+}
+
+.mistext {
+  color: rgb(62, 62, 62);
+  font-size: 20px;
+}
+
+.hide {
+  display: none;
+}
+
+.myDIV:hover+.hide {
+  padding: 15px;
+  display: block;
+  color: rgb(43, 57, 119);
+  font-weight: 500;
+}
+
+.imgsetss {
+  height: 400px;
+  width: 100%;
+  border-radius: 3%;
+}
+
+.imgfix {
+  overflow-x: auto;
+
+}
+
+.headshort {
+  color: #48a0c6;
+  font-weight: 700;
+  font-size: 30px;
+  font-family: ' Arial, sans-serif';
+}
+
+.headshorts {
+  color: #48a0c6;
+  font-weight: 900;
+  margin: 30px 10px;
+  font-size: 40px;
+  font-family: ' Arial, sans-serif';
+}
+.member{
+  font-size: 20px;
+  color: #1c2b50;
+  font-weight: 600;
+}

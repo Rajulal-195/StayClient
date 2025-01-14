@@ -1,0 +1,26 @@
+.userbackground {
+    padding: 0px, 10%;
+
+}
+
+.signmain {
+    padding: 10%;
+    padding-top: 20px;
+    margin: 0 auto;
+    /* border: 1px solid lightgray; */
+    /* box-shadow: 2px 2px 20px 2px gray; */
+}
+
+.setsign{
+    text-decoration: underline;
+    font-weight: 800;
+    font-family: 'Times New Roman', Times, serif;
+    color: #0071c2;
+}
+.sethr{
+    width: 300px;
+    margin: 0px auto;
+}
+.ses{
+    padding-left: 48.8%;
+}

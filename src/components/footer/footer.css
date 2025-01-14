@@ -1,0 +1,61 @@
+.footer {
+  width: 100%;
+  width: 1024px;
+  font-size: 12px;
+}
+
+.fLists {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.fList {
+  list-style: none;
+  padding: 0;
+}
+
+.company {
+  border-radius: 5%;
+}
+
+.fListItem {
+  margin-bottom: 10px;
+  color: #0f172b;
+  cursor: pointer;
+}
+
+.hrline {
+  color: white;
+}
+
+.hrlines {
+  color: red !important;
+  
+}
+
+.footeritem li {
+  color: red;
+  text-decoration: none !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.logoname {
+  color: red !important;
+}
+
+
+
+.set-icon {
+  margin: 0px auto !important;
+  text-align: center !important;
+}
+
+.tagline {
+  color: white !important;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
